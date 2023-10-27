@@ -5,6 +5,7 @@ const router=express.Router();
 router.get('/',restaurantCont.getAllRestaurant);
 router.get('/:cid',restaurantCont.getRestaurantBycid);
 router.get('/details/:rName',restaurantCont.getRestaurantProductDetails);
+router.get('/filter/details/:rName',restaurantCont.getRestaurantProductDetails);
 router.post('/filter/:pageNo',restaurantCont.getDataByFilter);
 
 
